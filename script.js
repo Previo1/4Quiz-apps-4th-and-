@@ -3,10 +3,10 @@ localStorage.setItem('userId', userId);
 
 let coins = 0;
 // Telegram Channel Link
-const telegramChannelLink = "https://t.me/YourChannelName"; // अपना लिंक डालें
+const telegramChannelLink = "https://t.me/quizzsapp"; // अपना लिंक डालें
 
 // Join Telegram button click event
-document.getElementById("join-telegram").href = telegramChannelLink;
+document.getElementById("join-telegram").href = https://t.me/quizzsapp;
 
 // Load user profile from Firebase
 async function loadUserProfile() {
