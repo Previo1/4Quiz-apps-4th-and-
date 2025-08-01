@@ -1,4 +1,7 @@
 // Admin Panel Script
+// Firebase Authentication and Firestore initialization
+const auth = firebase.auth();
+const db = firebase.firestore();
 
 function login() {
     const email = document.getElementById('email').value;
