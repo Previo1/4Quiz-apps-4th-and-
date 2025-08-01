@@ -2,6 +2,11 @@ let userId = localStorage.getItem('userId') || 'user_' + Date.now();
 localStorage.setItem('userId', userId);
 
 let coins = 0;
+// Telegram Channel Link
+const telegramChannelLink = "https://t.me/YourChannelName"; // अपना लिंक डालें
+
+// Join Telegram button click event
+document.getElementById("join-telegram").href = telegramChannelLink;
 
 // Load user profile from Firebase
 async function loadUserProfile() {
