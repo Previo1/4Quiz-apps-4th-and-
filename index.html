@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hamster Quiz - Phase 4 (Firebase)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>🐹 Hamster Quiz</h1>
+            <div id="coin-counter">💰 <span id="coin-count">0</span></div>
+        </header>
+
+        <main>
+            <div id="profile-section">
+                <input type="text" id="username" placeholder="Enter your name">
+                <input type="file" id="avatar-upload" accept="image/*">
+                <button id="save-profile">Save Profile</button>
+            </div>
+
+            <button id="join-telegram">Join Telegram Channel</button>
+            <button id="spin-wheel">🎡 Spin Wheel</button>
+            <button id="start-quiz">Start Daily Quiz</button>
+            <button id="copy-link">Copy Referral Link</button>
+
+            <div id="quiz-container"></div>
+
+            <div id="missions">
+                <h3>🎯 Daily Missions</h3>
+                <ul id="mission-list"></ul>
+            </div>
+
+            <div id="boosters">
+                <h3>Boosters</h3>
+                <ul id="booster-list"></ul>
+            </div>
+
+            <div id="leaderboard">
+                <h3>🏆 Global Leaderboard</h3>
+                <ul id="leaderboard-list"></ul>
+            </div>
+        </main>
+
+        <div id="coin-animation"></div>
+    </div>
+    <script src="firebase-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 1.2em;
+}
+#quiz-container {
+    margin-top: 20px;
+}
+button {
+    background: gold;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 10px;
+}
+button:hover {
+    transform: scale(1.05);
+}
+#leaderboard, #boosters, #missions, #friends-leaderboard, #reward-history {
+    margin-top: 20px;
+}
+#coin-animation {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+}
+.coin {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url('https://cdn-icons-png.flaticon.com/512/138/138292.png') no-repeat center/cover;
+    animation: floatUp 1s ease-out;
+}
+@keyframes floatUp {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100px); opacity: 0; }
+}
+#avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+}
