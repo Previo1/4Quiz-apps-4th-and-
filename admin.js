@@ -1,8 +1,4 @@
-// Initialize Firebase Authentication & Firestore
-const auth = firebase.auth();
-const db = firebase.firestore();
-
-// Admin Login
+// Firebase instances (from firebase-config.js)
 function login() {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
@@ -15,7 +11,6 @@ function login() {
         .catch(error => alert("Login failed: " + error.message));
 }
 
-// Update Telegram Link
 function updateTelegramLink() {
     const link = document.getElementById("telegram-link").value;
     if (!link) return alert("Please enter a valid Telegram link");
