@@ -2,23 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel</title>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
 </head>
 <body>
-    <h1>Admin Panel</h1>
+    <h2>Admin Panel</h2>
     <input type="email" id="email" placeholder="Email">
     <input type="password" id="password" placeholder="Password">
-    <button id="login">Login</button>
+    <button onclick="login()">Login</button>
+    <hr>
 
-    <div id="quiz-section" style="display:none;">
-        <h2>Add Quiz</h2>
-        <textarea id="quiz-data" placeholder='[{"question":"Q1","options":["A","B"],"answer":0}]'></textarea>
-        <button id="save-quiz">Save Quiz</button>
+    <div id="admin-section" style="display:none;">
+        <h3>Update Telegram Link</h3>
+        <input type="text" id="telegram-link" placeholder="Enter Telegram Link">
+        <button onclick="updateTelegramLink()">Save Link</button>
     </div>
 
+    <!-- Firebase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     <script src="firebase-config.js"></script>
     <script src="admin.js"></script>
 </body>
